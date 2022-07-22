@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="font-awesome/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <!-- JavaScript Libraries -->
+  <!-- Bootstrap CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://use.fontawwesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>每日一练</title>
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="src/style.css">
+      <!-- navbar -->
+      <link href="../adlibrary/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <style>
+
+  body {
+  background: #141414;
+  }
+
+
+  .loading {
+  text-transform: uppercase;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 65pt;
+  text-align: center;
+  height: 120px;
+  line-height: 110px;
+  vertical-align: bottom;
+
+  bottom: 0;
+  display: block;
+  }
+
+  .loading-2 {
+  text-transform: uppercase;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 60pt;
+  text-align: center;
+  height: 120px;
+  line-height: 110px;
+  vertical-align: bottom;
+
+  bottom: 0;
+  display: block;
+  }
+
+  @keyframes wave-animation {
+  0% {
+  background-position: 0 bottom;
+  }
+
+  100% {
+  background-position: 200px bottom;
+  }
+  }
+  @keyframes loading-animation {
+  0% {
+  background-size: 200px 0px;
+  }
+
+  100% {
+  background-size: 200px 200px;
+  }
+  }
+  .wave {
+  background-image: url("css/uFpLbYt.png");
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
+  animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
+  background-size: 200px 200px;
+  background-repeat: repeat-x;
+  opacity: 1;
+  }
+
+  .wave-2 {
+  -moz-background-clip: initial;
+  -o-background-clip: initial;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  display: inline-block;
+  }
+
+  h1 {text-align:center}
+
+  </style>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border" style="width: 3rem; height: 3rem;color:rgba(43, 255, 0, 0.829);" role="status">
+          <span class="sr-only">Loading...</span>
+      </div>
+  </div>
+  <!-- Spinner End -->
+  <!-- Navbar & Hero Start -->
+
+  <div class="container-xxl position-relative p-0" style="background-color: rgb(0, 0, 0);">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="每日一练.html" class="navbar-brand p-0">
+            <h1 class="m-0">创意练习</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 position-relative">
+              <a href="../index.html" class="nav-item nav-link">首页</a>
+              <a href="../adlibrary/AdLibrary.html" class="nav-item nav-link">ADmuseum</a>
+              <a href="../ogilvy/ogilvyworkshop2.html" class="nav-item nav-link">创意工具</a>
+              <a href="每日一练.html" class="nav-item nav-link active">创意练习</a>
+              <a href="../competition/event.html" class="nav-item nav-link">创意赛事</a>
+              <a href="../community/new.html" class="nav-item nav-link">创意社区</a>
+            </div>
+        </div>
+    </nav>
+  </div>
+<!-- <header> -->
+
+<a class="group" id="page-wrap"  target="_blank" rel="external noopener"><div id="inner-wrap"><svg class="waves" xmlns="" width="1440" height="321.75" viewBox="0 0 960 214.5" preserveAspectRatio=""><defs><style>.waves>path{-webkit-animation:a 17390ms ease-in-out infinite alternate-reverse both;-moz-animation:a 17390ms ease-in-out infinite alternate-reverse both;-ms-animation:a 17390ms ease-in-out infinite alternate-reverse both;-o-animation:a 17390ms ease-in-out infinite alternate-reverse both;animation:a 17390ms ease-in-out infinite alternate-reverse both;-webkit-animation-timing-function:cubic-bezier(.25,0,.75,1);-moz-animation-timing-function:cubic-bezier(.25,0,.75,1);-ms-animation-timing-function:cubic-bezier(.25,0,.75,1);-o-animation-timing-function:cubic-bezier(.25,0,.75,1);animation-timing-function:cubic-bezier(.25,0,.75,1);-webkit-will-change:transform;-moz-will-change:transform;-ms-will-change:transform;-o-will-change:transform;will-change:transform}.waves>path:nth-of-type(1){-webkit-animation-duration:20580ms;-moz-animation-duration:20580ms;-ms-animation-duration:20580ms;-o-animation-duration:20580ms;animation-duration:20580ms}.waves>path:nth-of-type(2){-webkit-animation-delay:-2690ms;-moz-animation-delay:-2690ms;-ms-animation-delay:-2690ms;-o-animation-delay:-2690ms;animation-delay:-2690ms;-webkit-animation-duration:13580ms;-moz-animation-duration:13580ms;-ms-animation-duration:13580ms;-o-animation-duration:13580ms;animation-duration:13580ms}g>path:nth-of-type(1){-webkit-animation-delay:-820ms;-moz-animation-delay:-820ms;-ms-animation-delay:-820ms;-o-animation-delay:-820ms;animation-delay:-820ms;-webkit-animation-duration:10730ms;-moz-animation-duration:10730ms;-ms-animation-duration:10730ms;-o-animation-duration:10730ms;animation-duration:10730ms}.waves>path:nth-of-type(1),g>path:nth-of-type(2){-webkit-animation-direction:alternate;-moz-animation-direction:alternate;-ms-animation-direction:alternate;-o-animation-direction:alternate;animation-direction:alternate}@-webkit-keyframes a{0%{-webkit-transform:translateX(-750px);transform:translateX(-750px)}100%{-webkit-transform:translateX(-20px);transform:translateX(-20px)}}@-moz-keyframes a{0%{-moz-transform:translateX(-750px);transform:translateX(-750px)}100%{-moz-transform:translateX(-20px);transform:translateX(-20px)}}@-ms-keyframes a{0%{-ms-transform:translateX(-750px);transform:translateX(-750px)}100%{-ms-transform:translateX(-20px);transform:translateX(-20px)}}@-o-keyframes a{0%{-o-transform:translateX(-750px);transform:translateX(-750px)}100%{-o-transform:translateX(-20px);transform:translateX(-20px)}}@keyframes a{0%{-webkit-transform:translateX(-750px);-moz-transform:translateX(-750px);-ms-transform:translateX(-750px);-o-transform:translateX(-750px);transform:translateX(-750px)}100%{-webkit-transform:translateX(-20px);-moz-transform:translateX(-20px);-ms-transform:translateX(-20px);-o-transform:translateX(-20px);transform:translateX(-20px)}}</style><linearGradient id="a"><stop stop-color="rgb(120,255,0)"/><stop offset="0.2" stop-color="rgb(120,255,0)"/><stop offset="0.4" stop-color="rgb(120,255,0)"/><stop offset="0.6" stop-color="rgb(120,255,0)"/></linearGradient></defs><path fill="url(#a)" d="M2662.6 1S2532 41.2 2435 40.2c-19.6-.2-37.3-1.3-53.5-2.8 0 0-421.3-59.4-541-28.6-119.8 30.6-206.2 75.7-391 73.3-198.8-2-225.3-15-370.2-50-145-35-218 37-373.3 36-19.6 0-37.5-1-53.7-3 0 0-282.7-36-373.4-38C139 26 75 46-1 46v106c17-1.4 20-2.3 37.6-1.2 130.6 8.4 210 56.3 287 62.4 77 6 262-25 329.3-23.6 67 1.4 107 22.6 193 23.4 155 1.5 249-71 380-62.5 130 8.5 209 56.3 287 62.5 77 6 126-18 188-18 61.4 0 247-38 307.4-46 159.3-20 281.2 29 348.4 30 67 2 132.2 6 217.4 7 39.3 0 87-11 87-11V1z"/><path fill="#F2F5F5" d="M2663.6 73.2S2577 92 2529 89c-130.7-8.5-209.5-56.3-286.7-62.4s-125.7 18-188.3 18c-5 0-10-.4-14.5-.7-52-5-149.2-43-220.7-39-31.7 2-64 14-96.4 30-160.4 80-230.2-5.6-340.4-18-110-12-146.6 20-274 36S820.4 0 605.8 0C450.8 0 356 71 225.2 62.2 128 56 60.7 28-.3 11.2V104c22 7.3 46 14.2 70.4 16.7 110 12.3 147-19.3 275-35.5s350 39.8 369 43c27 4.3 59 8 94 10 13 .5 26 1 39 1 156 2 250-70.3 381-62 130.5 8.2 209.5 56.3 286.7 62 77 6.4 125.8-18 188.3-17.5 5 0 10 .2 14.3.6 52 5 145 49.5 220.7 38.2 32-5 64-15 96.6-31 160.5-79.4 230.3 6 340 18.4 110 12 146.3-20 273.7-36l15.5-2V73l1-.5z"/><g fill="none" stroke="#E2E9E9" stroke-width="1">
+  <path d="M0 51.4c3.4.6 7.7 1.4 11 2.3 133.2 34 224.3 34 308.6 34 110.2 0 116.7 36.6 229.8 26 113-11 128.7-44 222-42.6C865 73 889 38 1002 27c113-10.8 119.6 25.6 229.8 25.6 84.4 0 175.4 0 308.6 34 133 34.2 277-73 379.4-84.3 204-22.5 283.6 128.7 283.6 128.7"/><path d="M0 6C115.7-6 198.3 76.6 308 76.6c109.6 0 131.8-20 223-28.3 114.3-10.2 238.2 0 238.2 0s124 10.2 238.3 0c91-8.2 113.2-28 223-28S1425 103 1541 91c115.8-11.8 153.3-69 269.3-84.6 116-15.5 198.4 71 308 71 109.8 0 131.8-20 223-28 114-10.2 237.7 0 237.7 0s37.4 2.4 82.8 3.7"/></g></svg>
+  <svg class="text" viewBox="0 0 1440 321.8" >
+    <text x="360" y="210" fill="black" font-weight="bolder" font-size="140px" letter-spacing="10px">创意练习坊</text>
+
+</svg></div></a>
+
+<h5><center><strong>创意练习坊是通过创意练习来提升自我的有趣机会。<br>每天，您都会收到一条有关创意练习的新提示。<br>你可以选择投稿策划、文案、视觉……ALL IF YOU WANT！<br>优秀作品将被创意总监选中并在主页上展示！</strong></center></h5>
+
+
+
+    <div class="container-fluid px-4 py-6">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.3s">
+            <br>
+            <h3><strong>创意练习坊</strong></h3>
+            <h3>Every day of <strong>PRACTICE</strong></h3>
+            <h3><strong>DISCOVERING</strong> better ideas</h3>
+            <br>
+          </div>
+        </div>
+        <div class="container-fluid wow fadeIn" data-wow-duration="1.0s" data-wow-delay="1s">
+          <div class="row">
+        <div class="col-md-3">
+      <div class="card bg-dark">
+        <div class="card-body">
+          <div class="imgBx">
+            <img src="练习1.jpg" alt="">
+          </div>
+        </div>
+      <div class="contentBx">
+        <br>
+        <h2>Practice 1 词汇</h2>
+        <a href="练习页/限定词.html" target="_blank"  rel="noreferrer">Try now!</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-3">
+      <div class="card bg-dark">
+        <div class="card-body">
+        <div class="imgBx">
+          <img src="练习1.jpg" alt="">
+        </div>
+      </div>
+      <div class="contentBx">
+      <br>
+      <h2>Practice 2 主题</h2>
+      <a href="练习页/限定主题.html" target="_blank"  rel="noreferrer">Try now!</a>
+      </div>
+      </div>
+      </div>
+
+      <div class="col-md-3">
+      <div class="card bg-dark">
+        <div class="card-body">
+        <div class="imgBx">
+          <img src="练习1.jpg" alt="">
+        </div>
+      </div>
+      <div class="contentBx">
+      <br>
+      <h2>Practice 3 视频</h2>
+      <a href="练习页/限定视频.html" target="_blank"  rel="noreferrer">Try now!</a>
+      </div>
+      </div>
+      </div>
+
+      <div class="col-md-3">
+      <div class="card bg-dark">
+        <div class="card-body">
+        <div class="imgBx">
+          <img src="练习1.jpg" alt="">
+        </div>
+      </div>
+      <div class="contentBx">
+      <br>
+      <h2>Practice 4 自定</h2>
+      <a href="练习页/自定.html" target="_blank"  rel="noreferrer">Try now!</a>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+      <br>
+      <div class="loading wave">
+  创意加载中
+</div>
+<div class="loading wave">
+  LOADING
+</div>
+</div>
+
+<div class="container-fluid" >
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+        <br>
+        <h3><strong>往期回顾 REVIEW</strong></h3>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container2 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
+
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="cards2">
+    <label class="card2" for="item-1" id="song-1">
+      <img src="练习页/imgs/回顾3.png" alt="ad">
+    </label>
+    <label class="card2" for="item-2" id="song-2">
+      <img src="练习页/imgs/回顾2.png" alt="ad">
+    </label>
+    <label class="card2" for="item-3" id="song-3">
+      <img src="练习页/imgs/回顾1.png" alt="ad">
+    </label>
+  </div>
+  <div class="player">
+    <div class="upper-part">
+      <div class="play-icon">
+        <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+          <defs/>
+          <path d="M5 3l14 9-14 9V3z"/>
+        </svg>
+      </div>
+      <div class="info-area" id="test">
+        <label class="song-info" id="song-info-1">
+          <div class="title">限定词：“OPEN”再定义</div>
+            <div class="time">2022.7.13</div>
+        </label>
+        <label class="song-info" id="song-info-1">
+          <div class="title">限定视频：圆缺拒纳，是非破立。</div>
+            <div class="time">2022.7.13</div>
+        </label>
+        <label class="song-info" id="song-info-3">
+          <div class="title">限定主题：“爸爸”不止性别和称呼</div>
+            <div class="time">2022.07.13</div>
+        </label>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <span class="progress"></span>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- <动效> -->
+<br>
+
+<div class="container-fluid" >
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+        <br>
+        <h3><strong>优秀作品集<br>EXCELLENT WORKS COLLECTION</strong></h3>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<div class="container wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="example-1 card3">
+       <div class="wrapper">
+         <div class="header">
+           <div class="date">
+             <span class="day">23</span>
+             <span class="month">JUNE</span>
+             <span class="year">2022</span>
+           </div>
+           <ul class="menu-content">
+             <li>
+               <a href="#" class="fa fa-bookmark-o"></a>
+             </li>
+             <li><a href="#" class="fa fa-heart-o"><span>2334</span></a></li>
+             <li><a href="#" class="fa fa-comment-o"><span>120</span></a></li>
+           </ul>
+         </div>
+         <div class="data">
+           <div class="content">
+             <span class="author">作者：在昼为影</span>
+             <h2 class="title3"><strong><a>爱无定义：限定主题原创策划案</a></strong></h2>
+             <p class="text3">创意总监：主张阐释的创意十分亮眼，策划案内容也紧扣主题，行云流水。</p>
+             <a href="#" class="button">Read more</a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="example-2 card3">
+       <div class="wrapper">
+         <div class="header">
+           <div class="date">
+             <span class="day">25</span>
+             <span class="month">JUNE</span>
+             <span class="year">2022</span>
+           </div>
+           <ul class="menu-content">
+             <li>
+               <a href="#" class="fa fa-bookmark-o"></a>
+             </li>
+             <li><a href="#" class="fa fa-heart-o"><span>1835</span></a></li>
+             <li><a href="#" class="fa fa-comment-o"><span>66</span></a></li>
+           </ul>
+         </div>
+         <div class="data">
+           <div class="content">
+             <span class="author">作者：爱喝水的鱼xuan</span>
+             <h2 class="title3"><strong><a>打破陈见：限定视频原创文案</a></strong></h2>
+             <p class="text3">创意总监：重新选定的视角独具新颖，具有打破局限的重构感。</p>
+             <a href="#" class="button">Read more</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+    </div>
+    <div class="example-3 card3">
+     <div class="wrapper">
+       <div class="header">
+         <div class="date">
+           <span class="day">11</span>
+           <span class="month">JULY</span>
+           <span class="year">2022</span>
+         </div>
+         <ul class="menu-content">
+           <li>
+             <a href="#" class="fa fa-bookmark-o"></a>
+           </li>
+           <li><a href="#" class="fa fa-heart-o"><span>1788</span></a></li>
+           <li><a href="#" class="fa fa-comment-o"><span>78</span></a></li>
+         </ul>
+       </div>
+       <div class="data">
+         <div class="content">
+           <span class="author">作者：狐假威vvv</span>
+           <h2 class="title3"><strong><a>热烈年华：限定关键词原创海报</a></strong></h2>
+           <p class="text3">创意总监：能精准把握关键词的主基调并配以适宜的色彩构造是好创意的关键。</p>
+           <a href="#" class="button">Read more</a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="example-4 card3">
+    <div class="wrapper">
+      <div class="header">
+        <div class="date">
+          <span class="day">21</span>
+          <span class="month">JULY</span>
+          <span class="year">2022</span>
+        </div>
+        <ul class="menu-content">
+          <li>
+            <a href="#" class="fa fa-bookmark-o"></a>
+          </li>
+          <li><a href="#" class="fa fa-heart-o"><span>2450</span></a></li>
+          <li><a href="#" class="fa fa-comment-o"><span>115</span></a></li>
+        </ul>
+      </div>
+      <div class="data">
+        <div class="content">
+          <span class="author">作者：懒羊羊吃番薯</span>
+          <h2 class="title3"><strong><a>本我与真我：自定创意原创文案</a></strong></h2>
+          <p class="text3">创意总监：切入点意想不到，文案内容出彩又契合广告创意。</p>
+          <a href="#" class="button">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+ </div>
+</div>
+
+<!-- Scripts -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="js/main.js"></script>
+<script src="js/style.js"></script>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+
+</body>
+
+</html>
