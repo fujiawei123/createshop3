@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>主题练习</title>
+	<meta name="description" content="Neat">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" user-scalable="no">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/style.js"></script>
+</style>
+</head>
+<body>
+	<style>
+	@keyframes to-right {
+		0%{
+			left:0;
+			width: 0;
+		}
+		50%{
+			left:0;
+			width: 100%;
+		}
+		100%{
+			left:100%;
+			width: 0;
+		}
+	}
+
+	.desc-group .box-group{
+		position:absolute;
+		height: 40%;
+		left:28vw;
+		top:25vh;
+		opacity: 0;
+		transition:2s;
+		-moz-transition: 2s; /* Firefox 4 */
+		-webkit-transition: 2s; /* Safari 和 Chrome */
+		-o-transition: 2s; /* Opera */
+	}
+	.desc-group .box-group h2{
+		font-size: 6rem;
+		margin-bottom: 3rem;
+		color: rgb(120,255,0);
+		font-weight:400;
+	}
+	.desc-group .box-group p{
+		margin-left:0.5rem;;
+		font-size: 1.5rem;
+		padding-right: 20rem;
+		letter-spacing:2px;
+		color: rgb(120,255,0);
+		font-weight:lighter;
+	}
+	.desc-group .box-group a{
+		display: inline-block;
+		margin-top:4rem;
+		font-size:1rem;
+		border:1px solid rgb(120,255,0);
+		border-radius: 6px;
+		padding:5px 30px;
+	}
+	.main-group .pic{
+		position: absolute;
+		z-index: 1;
+		left:15vw;
+		top:20vh;
+		height: 60vh;
+		/* width: 40vw; */
+		width: 0;
+		background: url('imgs/视频练习.png') no-repeat;
+		background-size: cover;
+		box-shadow: 7px 29px 49px 0px rgba(0,0,0,.3);
+		transition:1s;
+		-moz-transition: 1s; /* Firefox 4 */
+		-webkit-transition: 1s; /* Safari 和 Chrome */
+		-o-transition: 1s; /* Opera */
+	}
+	</style>
+
+	<section class="main-group">
+		<div class="logo-group">
+			<img src="./imgs/logo.png" alt="">
+			<svg viewBox="-126 -126 252 252" xmlns="http://www.w3.org/2000/svg">
+				<path id="path" d="M-125 0a125 125 0 10250 0 125 125 0 10-250 0" fill="none" />
+				<text y="40">
+					<textPath href="#path" startOffset="20">
+						We have only the IDEA
+						To see what you wanted to be
+						Every day of PRACTICE
+            DISCOVERING	better IDEAS
+						KEEP ON CREATING
+					</textPath>
+				</text>
+			</svg>
+		</div>
+
+		<div class="pic"></div>
+		<div class="desc-group">
+			<div class="login-color-blod"></div>
+			<div class="box-group">
+
+				<h2>限定视频：科学</h2>
+				<p>
+				辉瑞发布的慢动作短片——<br>《science will win 2022》<br>由一幕幕按下“暂缓键”的场景组成。<br>
+				</p>
+			<p>
+			沧海桑田，不过一瞬——<br>是科学让这一秒诞生。<br>以该视频为题，
+			<p>
+			你又当如何重新构思？
+			</p>
+			<a href="#">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			创意碰撞
+	</a>
+			</div>
+		</div>
+
+	</section>
+</body>
+<script type="text/javascript">
+	new Action({});
+</script>
+</html>
