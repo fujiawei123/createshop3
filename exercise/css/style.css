@@ -538,7 +538,7 @@ a {
 }
 /* <卡片1》 */
 .example-1 .wrapper {
-  background: url(https://wx1.sinaimg.cn/mw2000/002Ld2xrgy1h4bzllzg4vj60u00y8diu02.jpg) center/cover no-repeat;
+  background: url(p1.jpg) center/cover no-repeat;
 }
 .example-1 .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
@@ -604,7 +604,7 @@ a {
 
 /* <卡片2> */
 .example-2 .wrapper {
-  background: url(https://wx4.sinaimg.cn/mw2000/002Ld2xrgy1h4bzlm9jxuj60za0u0ac102.jpg) center/cover no-repeat;
+  background: url(p2.jpg) center/cover no-repeat;
 }
 .example-2 .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
@@ -669,7 +669,7 @@ a {
 }
 /* <卡片3> */
 .example-3 .wrapper {
-  background: url(https://wx1.sinaimg.cn/mw2000/002Ld2xrgy1h4bzlltx0oj610e0u0jsx02.jpg) center/cover no-repeat;
+  background: url(p3.jpg) center/cover no-repeat;
 }
 .example-3 .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
@@ -734,7 +734,7 @@ a {
 }
 /* <卡片3> */
 .example-4 .wrapper {
-  background: url(https://wx2.sinaimg.cn/mw2000/002Ld2xrgy1h4bzlltu9zj61590u0wfr02.jpg) center/cover no-repeat;
+  background: url(p4.jpg) center/cover no-repeat;
 }
 .example-4 .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
