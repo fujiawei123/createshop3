@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>THE ONE SHOW</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link
+    href="chart/c3.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+  <script src="chart/js/c3.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+    <!-- 国内 Staticfile CDN 上的 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+<body>
+  <div class="container-xxl" style="background-color:black;">
+    <div class="container p-3" style="background-color: #000000;">
+      <nav class="nav">
+        <a class="nav-link" aria-current="page" href="AdLibrary.html" style="color:rgb(15, 219, 0);font-weight: 900;">ADlibrary</a>
+        <a class="nav-link disabled text-light">/</a>
+        <a class="nav-link disabled">THE ONE SHOW</a>
+        </nav>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border" style="width: 3rem; height: 3rem;color:rgba(43, 255, 0, 0.829);" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <div class="container-fulid py-5">
+            <h1 class="ml6  text-small animated zoomIn">
+                <span class="text-wrapper">
+                  <span class="letters">THE ONE SHOW</span>
+                </span>
+              </h1>
+              <h1 class="ml12">Find Your Inspiration</h1>
+              <p id="newfonts" class="text-white text-small animated zoomIn ">OneShow广告奖是由美国One Club于1975年创立和主办的广告大奖，OneShow广告奖的评委都是在国际享有盛誉的精英创意总监，他们组成的强大评审团阵容，决定了这个广告奖项在广告设计、文案等方面的权威地位，它赋予广告人非凡创意的最高荣誉。今天，获得One Show金铅笔已经成为广告创意人员职业生涯的终极成就，甚至成为他们毕生的追求，而他们的作品更成为全世界灵感的源泉。</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">RANK</th>
+                    <th scope="col">AGENCY RANKINGS</th>
+                    <th scope="col">POINTS</th>
+                    <th scope="col">ENTRIES</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="table-dark" scope="row">1</th>
+                    <td class="table-dark">Leo Burnett/Chicago</td>
+                    <td class="table-dark">320.50</td>
+                    <td class="table-dark">19</td>
+                  </tr>
+                  <tr>
+                    <th class="table-dark" scope="row">2</th>
+                    <td class="table-dark">Ogilvy UK/LONdon </td>
+                    <td class="table-dark">161</td>
+                    <td class="table-dark">32</td>
+                  </tr>
+                  <tr>
+                    <th class="table-dark" scope="row">3</th>
+                    <td class="table-dark">L&C/NewYork </td>
+                    <td class="table-dark">136.50</td>
+                    <td class="table-dark">8</td>
+                  </tr>
+                  <tr>
+                    <th class="table-dark" scope="row">4</th>
+                    <td class="table-dark">Dentsu Webchutney/Bengaluru</td>
+                    <td class="table-dark">134</td>
+                    <td class="table-dark">10</td>
+                  </tr>
+                  <tr>
+                    <th class="table-dark" scope="row">5</th>
+                    <td class="table-dark">Mojo Supermarket</td>
+                    <td class="table-dark">126</td>
+                    <td class="table-dark">8</td>
+                  </tr>
+                  <tr>
+                    <th class="table-dark" scope="row">6</th>
+                    <td class="table-dark">Africa/Sao Paulo</td>
+                    <td class="table-dark">118</td>
+                    <td class="table-dark">14</td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div id="chart2" class="wow fadeInUp" style="background-color:rgb(126, 126, 126);" data-wow-delay="0.1s"></div>
+        </div>
+    </div>
+  </div>
+        <!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script src="js/js2.js"></script>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+<script>
+  var chart2 = c3.generate({
+      bindto: "#chart2",type:'bar',
+      data: {
+        x : 'x',
+        columns: [
+            ['x',  'Leo Burnett','Ogilvy UK', 'L&C', 'Dentsu Webchutney', 'Mojo Supermarket', 'Africa'],
+            ['得分',320.50,161,136.50,134,126,118],
+            ['入围数',19,32,8,10,8,14]
+        ],
+        colors:{
+         得分:'#78ff00',
+         入围数:'#e7e7e7'
+       },
+        groups: [
+            ['得分', '入围数']
+        ],
+        type:'bar',
+      types:{
+        得分:'area',
+      }
+    },
+    axis: {
+        x: {
+            type: 'category' // this needed to load string x value
+        }
+    }
+    });
+              </script>
+</html>
