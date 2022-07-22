@@ -1,0 +1,235 @@
+/********** Template CSS **********/
+:root {
+    --primary: #78ff00;
+    --light: #e2f8ce;
+    --dark: #428d00;
+}
+.font-secondary {
+    font-family: 'Pacifico', cursive;
+}
+body{
+  background-color: #000000;
+text-primary:
+}
+
+
+.text-primary{
+  color:#78ff00;
+}
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color:#78ff00;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary{
+  background: #78ff00;
+  border-color: #78ff00;
+  color: #78ff00;
+}
+.btn.btn-outline-primary:hover {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+
+.event-item img {
+    transition: .5s;
+}
+
+.event-item:hover img {
+    transform: scale(1.1);
+    filter: blur(5px)
+}
+
+.event-item .team-overlay {
+    transition: .5s;
+    opacity: 0;
+}
+
+.event-item:hover .team-overlay {
+    opacity: 1;
+}
+
+/*** Team ***/
+.team-item {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    transition: .5s;
+    z-index: 1;
+}
+
+.team-item::before,
+.team-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0 0 45px rgba(120,255,0, .07);
+    transition: .5s;
+    z-index: -1;
+}
+
+.team-item::after {
+    top: auto;
+    bottom: 0;
+}
+
+.team-item:hover::before,
+.team-item:hover::after {
+    background: var(--primary);
+}
+
+.team-item h5,
+.team-item p {
+    transition: .5s;
+}
+
+.team-item:hover h5,
+.team-item:hover p {
+    color: #FFFFFF;
+}
+
+.team-item img {
+    padding: 15px;
+    border: 1px solid var(--primary);
+}
+
+
+/*** Footer ***/
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid rgba(256, 256, 256, .1);
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 14px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
